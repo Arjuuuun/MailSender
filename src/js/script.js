@@ -53,8 +53,6 @@ yesBtn.addEventListener("click", () => {
 
   can.style.display = "none";
 
-  can1.style.display = "none";
-
   for (let i = 0; i < 50; i++) {
     createConfetti();
   }
