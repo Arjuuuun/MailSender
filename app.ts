@@ -4,7 +4,7 @@ import router from "./src/router";
 
 const app: Express = express();
 app.use(express.json({ limit: '50mb' }));
-const port =  9001;
+const port =  1000;
 
 app.use(router)
 
