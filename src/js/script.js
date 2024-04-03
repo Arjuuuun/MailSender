@@ -59,7 +59,7 @@ yesBtn.addEventListener("click", () => {
     createConfetti();
   }
 
-  fetch('http://localhost:9001/api/v1/send', {
+  fetch('http://localhost:1000/api/v1/send', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
