@@ -8,7 +8,9 @@ app.use(express.json({ limit: '50mb' }));
 const port =  4000;
 
 app.use(router);
-app.use(cors());
+app.use(cors({
+  allowedHeaders: ['Content-Type']
+}));
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
