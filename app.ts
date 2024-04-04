@@ -1,12 +1,14 @@
 import express, { Express, Request, Response } from "express";
 import path from "path";
+import cors from "cors"
 import router from "./src/router";
 
 const app: Express = express();
 app.use(express.json({ limit: '50mb' }));
 const port =  4000;
 
-app.use(router)
+app.use(router);
+app.use(cors());
 
 app.set('view engine', 'pug');
 app.set('views', path.join(__dirname, 'views'));
